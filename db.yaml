@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: knote-db 
+spec:
+  selector:
+    matchLabels:
+      app: my-db
+  template:
+    metadata:
+      labels:
+        app: my-db
+    spec:
+      containers:
+        - name: my-db
+          image: mongo
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: 
+              mountPath: 
+      volumes:
+        - name: 
+          persistentVolumeClaim:
+            claimName: 
