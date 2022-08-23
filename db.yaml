@@ -16,10 +16,4 @@ spec:
           image: mongo
           ports:
             - containerPort: 27017
-          volumeMounts:
-            - name: 
-              mountPath: 
-      volumes:
-        - name: 
-          persistentVolumeClaim:
-            claimName: 
+          
