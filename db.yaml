@@ -5,14 +5,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: my-db
+      app: my-db1
   template:
     metadata:
       labels:
-        app: my-db
+        app: my-db1
     spec:
       containers:
-        - name: my-db
+        - name: my-db1
           image: mongo
           ports:
             - containerPort: 27017
